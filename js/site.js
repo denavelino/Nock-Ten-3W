@@ -112,7 +112,7 @@
                             
             d3.json("data/Phil_provinces.geojson", function (provincesJSON) {
                 
-                map_chart.width(600).height(800)
+                map_chart.width(800).height(900)
                     .dimension(cf.pcode)
                     .group(pcode)
 					.colors(d3.scale.quantile()
@@ -128,7 +128,7 @@
                     });
                     
                     d3.json("data/Phil_municipalities.geojson", function (municJSON){
-                        map2_chart.width(600).height(800)
+                        map2_chart.width(800).height(900)
                             .dimension(cf.mcode)
                             .group(mcode)
 							.colors(d3.scale.quantile()
